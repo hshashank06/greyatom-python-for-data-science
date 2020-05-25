@@ -33,12 +33,14 @@ def fuse_msg(message_a,message_b):
 #Calling the function to read file  
 secret_msg_1 = fuse_msg(message_1,message_2)
 print(secret_msg_1)
-#Calling the function to read file
+#Printing the secret Message
 message_3 = read_file(file_path_3)
 print(message_3)
 sub = ' '
-#Calling the function 'fuse_msg'
+
+#Creating another function 
 def substitute_msg(message_c):
+    #Introducing the If- elif -else statements for condition check
     if message_c == 'Red':
         sub = 'Army General'
     elif message_c == 'Green':
@@ -49,17 +51,9 @@ def substitute_msg(message_c):
 
 
 
-#Printing the secret message 
+#calling the function
 secret_msg_2 = substitute_msg(message_3)
 print(secret_msg_2)
-
-#Function to substitute the message
-
-    
-    #If-else to compare the contents of the file
-    
-    
-    #Returning the substitute of the message
     
     
 
@@ -67,14 +61,9 @@ print(secret_msg_2)
 message_4 = read_file(file_path_4)
 message_5 = read_file(file_path_5)
 
+#printing the secret message
 print(message_4)
 print(message_5)
-
-#Calling the function 'substitute_msg'
-
-
-#Printing the secret message
-
 
 
 #Function to compare message
@@ -88,20 +77,10 @@ def compare_msg(message_d,message_e):
     c_list = [ i for i in a_list if i not in b_list]
     print(c_list)
     final_msg = ' '.join(c_list)
-    return final_msg
-    #Splitting the message into a list
-    
-    
-    #Comparing the elements from both the lists
-    
-    
-    #Combining the words of a list back to a single string sentence
-    
-    
     #Returning the sentence
+    return final_msg
     
-    
-
+   
 #Calling the function to read file
 secret_msg_3 = compare_msg(message_4,message_5)
 print(secret_msg_3)
@@ -110,10 +89,10 @@ print(secret_msg_3)
 
 
 #Calling the function 'compare messages'
+#Printing the secret message
 
 message_6 = read_file(file_path_6)
 print(message_6)
-#Printing the secret message
 
 
 #Function to filter message
@@ -138,6 +117,7 @@ def extract_msg(message_f):
     return final_msg
     
 #Calling the function to read file
+#Calling the function 'filter_msg'
 
 secret_msg_4 = extract_msg(message_6)
 
