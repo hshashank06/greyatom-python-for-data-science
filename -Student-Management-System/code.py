@@ -61,17 +61,3 @@ full_name = first_name + " " +last_name
 certificate_name = full_name.upper()
 print(certificate_name)
 
-
-# Create variable first_name 
-
-# Create variable Last_name and store last two element in the list
-
-# Concatenate the string
-
-# print the full_name
-
-# print the name in upper case
-
-# Code ends here
-
-
